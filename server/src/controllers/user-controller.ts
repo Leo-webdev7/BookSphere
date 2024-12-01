@@ -1,5 +1,5 @@
 import type { Request, Response } from 'express';
-// import user model
+// import user  model
 import User from '../models/User.js';
 // import sign token function from auth
 import { signToken } from '../services/auth.js';
@@ -24,7 +24,7 @@ export const createUser = async (req: Request, res: Response) => {
   if (!user) {
     return res.status(400).json({ message: 'Something is wrong!' });
   }
-  const token = signToken(user.username, user.password, user._id);
+  const token = signToken(user.username, user.password, user.email);
   return res.json({ token, user });
 };
 

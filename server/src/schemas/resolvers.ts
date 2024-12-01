@@ -1,12 +1,13 @@
-import { error } from "console";
-import User from "../models/User";
-import { signToken } from "../services/auth";
-import { createUser, login } from "../controllers/user-controller";
-import exp from "constants";
+// import { error } from "console";
+import User from "../models/User.js";
+import { signToken } from "../services/auth.js";
+// import { createUser, login } from "../controllers/user-controller";
+// import exp from "constants";
+// import typeDefs from "./typeDefs";
 
-const resolvers {
+const resolvers = {
     Query: {
-        me: async (_,__, context) => {
+        me: async (_,__, context: any) => {
             if (!context.user) {
                 throw new Error('Not authenticated');
             }

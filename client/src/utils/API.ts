@@ -1,4 +1,4 @@
-import type { User } from '../models/User.js';
+/* import type { User } from '../models/User.js';
 import type { Book } from '../models/Book.js';
 
 // route to get logged in user's info (needs the token)
@@ -20,6 +20,8 @@ export const createUser = (userData: User) => {
     body: JSON.stringify(userData),
   });
 };
+
+
 
 export const loginUser = (userData: User) => {
   return fetch('/api/users/login', {
@@ -51,7 +53,7 @@ export const deleteBook = (bookId: string, token: string) => {
       authorization: `Bearer ${token}`,
     },
   });
-};
+}; */
 
 // make a search to google books api
 // https://www.googleapis.com/books/v1/volumes?q=harry+potter

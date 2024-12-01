@@ -6,6 +6,7 @@ import bookSchema from './Book.js';
 import type { BookDocument } from './Book.js';
 
 export interface UserDocument extends Document {
+  _id: string;
   id: string;
   username: string;
   email: string;
