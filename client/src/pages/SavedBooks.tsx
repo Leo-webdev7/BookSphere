@@ -36,9 +36,9 @@ const SavedBooks = () => {
           },
         },
       });
-
+  console.log("this is the data: ", data);
       // Update state with the new saved books list after deletion
-      setSavedBooks(data.deleteBook.savedBooks); // Assuming the mutation returns updated saved books
+      setSavedBooks(data.removeBook.savedBooks); // Assuming the mutation returns updated saved books
       // Remove book ID from localStorage
       removeBookId(bookId);
     } catch (err) {

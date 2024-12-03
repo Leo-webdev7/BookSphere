@@ -6,6 +6,7 @@ import App from './App.jsx'
 import SearchBooks from './pages/SearchBooks'
 import SavedBooks from './pages/SavedBooks'
 
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
         index: true,
         element: <SearchBooks />
       }, {
-        path: 'saved',
+        path: '/saved',
         element: <SavedBooks />
       }
     ]

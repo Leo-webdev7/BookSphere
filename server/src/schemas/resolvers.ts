@@ -36,7 +36,8 @@ const resolvers = {
             const token = signToken(user.username, user.email, user._id);
             return { token, user };
         },
-        saveBook: async (_, { input }, context) => {
+        saveBook: async (_: any, { input }, context: any) => {
+            console.log('Context user:', context.user);
             if (!context.user) {
                 throw new Error('Not authenticated');
             }
@@ -50,7 +51,7 @@ const resolvers = {
             }
             return updatedUser;
         },
-        removeBook: async (_, { bookId }, context) => {
+        removeBook: async (_: any, { bookId }, context: any) => {
             if (!context.user) {
                 throw new Error('Not authenticated')
             }

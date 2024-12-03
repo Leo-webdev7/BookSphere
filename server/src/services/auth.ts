@@ -47,11 +47,13 @@ interface JwtPayload {
 
 export const authenticateToken = (authHeader: string | undefined): JwtPayload | null => {
   if (!authHeader) {
+    console.log('No auth header found');
     return null; // no token provided
   }
 
   const token = authHeader.split(' ')[1]; // Expecting "Bearer <token>"
   const secretKey = process.env.JWT_SECRET_KEY || '';
+  console.log('JWT Secret Key:', secretKey); // This should print your secret key
 
   try {
     const user = jwt.verify(token, secretKey) as JwtPayload;
