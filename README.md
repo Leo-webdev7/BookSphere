@@ -7,8 +7,8 @@
 * [Description](#description)
 * [Installation](#installation)
 * [Usage Information](#usage-information)
-* [Contribution Guidelines](#contribution-guidelines)
-* [Test Instructions](#test-instructions)
+* [Screenshots](#screenshots)
+* [Links](#links)
 * [License](#license)
 * [Questions](#questions)
 
@@ -24,13 +24,17 @@ This application is a Book Search Engine built using the MERN stack (MongoDB, Ex
 
 This project allow to search books, add them in saved books list, delete books from saved books list.
 
-## Contribution Guidelines
+## Screenshots
 
-Please refer to the CONTRIBUTING.md file for guidelines.
+![2024-12-04_094947](https://github.com/user-attachments/assets/930e5d69-7ee2-415a-bd51-3aee0617c119)
+![2024-12-04_095017](https://github.com/user-attachments/assets/32d10262-4263-400a-8089-beb31a9a85f6)
+![2024-12-04_095044](https://github.com/user-attachments/assets/43f6ed62-2ed1-4bde-af4b-cec7e3446e7c)
 
-## Test Instructions
 
-Run `npm test` to execute the test suite.
+## Links
+
+GitHub repo - https://github.com/Leo-webdev7/BookSphere
+Walkthrough video - https://drive.google.com/file/d/1CSef4cXzBWqZ7Uf9YwwjCrgaW6ssGVzx/view?usp=sharing
 
 ## License
 
