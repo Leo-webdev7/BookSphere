@@ -37,6 +37,8 @@ GitHub repo - https://github.com/Leo-webdev7/BookSphere
 
 Walkthrough video - https://drive.google.com/file/d/1CSef4cXzBWqZ7Uf9YwwjCrgaW6ssGVzx/view?usp=sharing
 
+Render link - https://booksphere-0e1r.onrender.com
+
 ## License
 
 This application is covered under the MIT license.
