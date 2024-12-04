@@ -9,6 +9,9 @@ import { typeDefs, resolvers } from './schemas/index.js';
 import db from './config/connection.js';
 import { authenticateToken } from './services/auth.js';
 
+import { dirname } from 'path'; // added
+import { fileURLToPath } from 'url'; //added
+
 const PORT = process.env.PORT || 3001;
 const app = express();
 const server = new ApolloServer({
@@ -18,6 +21,9 @@ const server = new ApolloServer({
 
 const startApolloServer = async () => {
   await server.start();
+
+const __filename = fileURLToPath(import.meta.url);// added
+const __dirname = dirname(__filename);  // added
   
   app.use(cors({ origin: 'http://localhost:3000' })); // Allow requests from the frontend
   app.use(express.urlencoded({ extended: true }));
@@ -58,4 +64,9 @@ const startApolloServer = async () => {
   });
 };
 
-startApolloServer();
+startApolloServer();  
+
+
+
+
+
